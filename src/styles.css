@@ -127,67 +127,9 @@ span {
     font-size: 2.6rem;
 }
 
-/* Mobile portrait adjustments */
-@media (max-width: 450px) {
-    .home-img img,
-    .about-img img {
-        width: 90vw;
-    }
-    .property-card {
-        width: 100%;
-    }
-}
-.home, .about {
-    flex-direction: column;
-    text-align: center;
-}
-h1, h2 {
-    font-size: clamp(2rem, 5vw, 3rem); /* Adapts between 2rem and 3rem based on viewport */
-}
-p {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-}
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-/* Base font size for larger screens */
-@media (max-width: 1400px) {
-    html {
-        font-size: 60%;
-    }
-}
-
-/* Tablet landscape */
-@media (max-width: 991px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-/* Tablet portrait */
-@media (max-width: 768px) {
-    html {
-        font-size: 50%;
-    }
-}
-
-/* Small screens */
-@media (max-width: 450px) {
-    html {
-        font-size: 45%;
-    }
-    .home-content h1 {
-        font-size: 4rem;
-    }
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-    .property-card {
-        width: 100%;
-    }
-}
+ 
+ 
+ 
 
 
 .social-media a {
