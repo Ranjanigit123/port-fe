@@ -404,7 +404,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 15% ;
+    padding: 1rem 35% ;
     background: var(--snd-bg-color);
     transform: translateX(-83px)
 }
@@ -463,7 +463,7 @@ span {
     }
 
     .footer {
-        padding: 2rem 3%;
+        padding: 1rem 3%;
     }
 }
 
