@@ -404,7 +404,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem 35% ;
+    padding: 1rem 40% ;
     background: var(--snd-bg-color);
     transform: translateX(-83px)
 }
