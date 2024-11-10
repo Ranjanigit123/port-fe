@@ -399,14 +399,11 @@ span {
 
 .footer {
     display: flex;
-    width: 120%;
-    height: 120%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem 40% ;
+    padding: 2rem 9%;
     background: var(--snd-bg-color);
-    transform: translateX(-83px)
 }
 
 .footer-text {
@@ -463,7 +460,7 @@ span {
     }
 
     .footer {
-        padding: 1rem 3%;
+        padding: 2rem 3%;
     }
 }
 
