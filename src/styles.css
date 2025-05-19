@@ -729,7 +729,11 @@ h1,
 h2 {
     text-align: center;
 }
-
+.success-message {
+  color: green;
+  font-weight: bold;
+  padding: 10px 0;
+}
 
  
 

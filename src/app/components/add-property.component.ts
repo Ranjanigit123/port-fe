@@ -9,6 +9,10 @@ import { PropertyService } from '../services/property.service';
     <section class = "contact" id = "contact" >
     <div>
       <h2 style="color: #007BFF;">LET'S TALK</h2>
+      <!-- ✅ Success message -->
+      <div *ngIf="isSubmitted" class="success-message" style="color: green; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+      ✅ Your message was sent successfully!
+      </div>
       <form (submit)="addProperty()">
         <div class="form-row">
           <label
@@ -92,6 +96,7 @@ export class AddPropertyComponent implements OnInit {
         message: '',
         
     };
+    isSubmitted: boolean = false; // ✅ success flag
 
     @Output() propertyAdded = new EventEmitter<Property>();
 
@@ -110,6 +115,8 @@ export class AddPropertyComponent implements OnInit {
                     emailSubject: '',
                     message: '',
                 };
+                this.isSubmitted = true; // ✅ show success message
+                setTimeout(() => this.isSubmitted = false, 5000); // ✅ hide after 5s
             },
             (error) => console.error(error)
         );
